@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Производство</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <h1 class="title">Производство</h1>
+            <form id="dataForm" class="form">
+                <div class="form__item">
+                    <label class="form__label" for="city">Город</label>
+                    <select class="form__select" id="city" name="city"></select>
+                </div>
+
+                <div class="form__item">
+                    <label class="form__label" for="factory">Цех</label>
+                    <select class="form__select" id="factory" name="factory" disabled></select>
+                </div>
+
+                <div class="form__item">
+                    <label class="form__label" for="employee">Сотрудник</label>
+                    <select class="form__select" id="employee" name="employee" disabled></select>
+                </div>
+
+                <div class="form__item">
+                    <label class="form__label" for="brigade">Бригада</label>
+                    <select class="form__select" id="brigade" name="brigade"></select>
+                </div>
+
+                <div class="form__item">
+                    <label class="form__label" for="shift">Смена</label>
+                    <select class="form__select" id="shift" name="shift"></select>
+                </div>
+
+            </form>
+
+            <div id="warning" class="warning">Пожалуйста, выберите все пункты.</div>
+
+            <button class="form__button" onclick="saveSelections()">Сохранить</button>
+        </div>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
